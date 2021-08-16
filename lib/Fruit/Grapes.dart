@@ -53,7 +53,7 @@ class _GrapeFruitState extends State<GrapeFruit> {
                       padding: const EdgeInsets.only(top: 20),
                       child: YoutubePlayer(
                         controller: YoutubePlayerController(
-                          initialVideoId: 'Vj_13bdU4dU',
+                          initialVideoId: '8MJqZTnCEOA?start=36&end=41&autoplay=1',
                           flags: YoutubePlayerFlags(
                             autoPlay: true,
                             mute: false,

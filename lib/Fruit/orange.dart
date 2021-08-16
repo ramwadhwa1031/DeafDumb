@@ -51,7 +51,7 @@ class _OrangeFruitState extends State<OrangeFruit> {
                       padding: const EdgeInsets.only(top: 20),
                       child: YoutubePlayer(
                         controller: YoutubePlayerController(
-                          initialVideoId: 'Vj_13bdU4dU',
+                          initialVideoId: '8MJqZTnCEOA?start=9&end=13&autoplay=1',
                           flags: YoutubePlayerFlags(
                             autoPlay: true,
                             mute: false,
