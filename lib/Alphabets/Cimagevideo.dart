@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class BananaFruit extends StatefulWidget {
+class CImageVideo extends StatefulWidget {
   @override
-  _BananaFruitState createState() => _BananaFruitState();
+  _CImageVideoState createState() => _CImageVideoState();
 }
 
-class _BananaFruitState extends State<BananaFruit> {
+class _CImageVideoState extends State<CImageVideo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("A Related Image and Video"),
+          title: Text("C Related Image and Video"),
         ),
         body: SingleChildScrollView(
           child: Container(
@@ -22,20 +22,27 @@ class _BananaFruitState extends State<BananaFruit> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(20.0),
-                      child: Text(
-                        "B : Banana Fruit",
-                        style: TextStyle(fontSize: 20),
+                      child: Column(
+                        children: [
+                          Image.asset(
+                            "images/c22.png",
+                          ),
+                          Text(
+                            "C : Alphabets",
+                            style: TextStyle(fontSize: 20),
+                          ),
+                        ],
                       ),
                     ),
                     GridView.count(
                       shrinkWrap: true,
-                      crossAxisCount: 2,
+                      crossAxisCount: 1,
                       mainAxisSpacing: 20,
                       crossAxisSpacing: 20,
                       children: [
                         Card(
                           child: Image.asset(
-                            "images/banana.png",
+                            "images/C111.jpg",
                           ),
                           elevation: 10,
                         ),
@@ -54,7 +61,8 @@ class _BananaFruitState extends State<BananaFruit> {
                       padding: const EdgeInsets.only(top: 20),
                       child: YoutubePlayer(
                         controller: YoutubePlayerController(
-                          initialVideoId: 'Vj_13bdU4dU',
+                          initialVideoId:
+                              'Vj_13bdU4dU?start=9&end=10&autoplay=1',
                           flags: YoutubePlayerFlags(
                             autoPlay: true,
                             mute: false,

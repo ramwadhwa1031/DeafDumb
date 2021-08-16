@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:myprojt/rose.dart';
+import 'package:myprojt/flower/rose.dart';
 
 import 'flower.dart';
-import 'orange.dart';
+import '../Fruit/orange.dart';
 
 class Flowercls extends StatefulWidget {
   @override

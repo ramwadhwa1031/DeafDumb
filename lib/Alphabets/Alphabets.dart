@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:myprojt/Aimagevideo.dart';
-import 'package:myprojt/Bimagevideo.dart';
 
+import 'Aimagevideo.dart';
+import 'Bimagevideo.dart';
 import 'Cimagevideo.dart';
 import 'Dimagevideo.dart';
 import 'Eimagevideo.dart';

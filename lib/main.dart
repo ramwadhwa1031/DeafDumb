@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 
 import 'package:carousel_slider/carousel_slider.dart';
-import 'package:myprojt/Alphabets.dart';
-import 'package:myprojt/Fruit.dart';
-import 'package:myprojt/flowercls.dart';
-import 'package:myprojt/shape.dart';
+import 'package:myprojt/Alphabets/Alphabets.dart';
+import 'package:myprojt/Fruit/Fruit.dart';
+import 'package:myprojt/flower/flowercls.dart';
+import 'package:myprojt/shape/shape.dart';
 
-import 'BasicSign.dart';
+import 'Basic/BasicSign.dart';
+import 'Number.dart';
+
+//https://github.com/hemakkr27/DeafDumb
 
 void main() => runApp(MaterialApp(
       home: MyApp(),
@@ -142,6 +145,12 @@ class _MyAppState extends State<MyApp> {
                             // s2: "Texy",
                             icon: Icon(Icons.ac_unit,
                                 size: 25, color: Colors.blue)),
+                        Custumcls(
+                            w1: Numbercls(),
+                            s1: "Numbers ",
+                            // s2: "Texy",
+                            icon: Icon(Icons.ac_unit,
+                                size: 25, color: Colors.blue)),
 
                         Custumcls(
                             w1: Shapecls(),
@@ -156,6 +165,7 @@ class _MyAppState extends State<MyApp> {
                             // s2: "Texy",
                             icon: Icon(Icons.ac_unit,
                                 size: 25, color: Colors.blue)),
+
                         Custumcls(
                             w1: AlphabetsCls(),
                             s1: "Dates ",

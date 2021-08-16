@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class OImageVideo extends StatefulWidget {
+class SImageVideo extends StatefulWidget {
   @override
-  _OImageVideoState createState() => _OImageVideoState();
+  _SImageVideoState createState() => _SImageVideoState();
 }
 
-class _OImageVideoState extends State<OImageVideo> {
+class _SImageVideoState extends State<SImageVideo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,10 +25,10 @@ class _OImageVideoState extends State<OImageVideo> {
                       child: Column(
                         children: [
                           Image.asset(
-                            "images/o22.png",
+                            "images/s22.png",
                           ),
                           Text(
-                            "O: Alphabets",
+                            "S: Alphabets",
                             style: TextStyle(fontSize: 20),
                           ),
                         ],
@@ -36,13 +36,13 @@ class _OImageVideoState extends State<OImageVideo> {
                     ),
                     GridView.count(
                       shrinkWrap: true,
-                      crossAxisCount: 2,
+                      crossAxisCount: 1,
                       mainAxisSpacing: 20,
                       crossAxisSpacing: 20,
                       children: [
                         Card(
                           child: Image.asset(
-                            "images/O111.jpg",
+                            "images/S111.jpg",
                           ),
                           elevation: 10,
                         ),
@@ -62,7 +62,7 @@ class _OImageVideoState extends State<OImageVideo> {
                       child: YoutubePlayer(
                         controller: YoutubePlayerController(
                           initialVideoId:
-                              'Vj_13bdU4dU?start=46&end=48&autoplay=1',
+                              'Vj_13bdU4dU?start=56&end=58&autoplay=1',
                           flags: YoutubePlayerFlags(
                             autoPlay: true,
                             mute: false,

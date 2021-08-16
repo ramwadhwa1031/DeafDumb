@@ -1,17 +1,17 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class NImageVideo extends StatefulWidget {
+class RImageVideo extends StatefulWidget {
   @override
-  _NImageVideoState createState() => _NImageVideoState();
+  _RImageVideoState createState() => _RImageVideoState();
 }
 
-class _NImageVideoState extends State<NImageVideo> {
+class _RImageVideoState extends State<RImageVideo> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
-          title: Text("N Related Image and Video"),
+          title: Text("A Related Image and Video"),
         ),
         body: SingleChildScrollView(
           child: Container(
@@ -25,10 +25,10 @@ class _NImageVideoState extends State<NImageVideo> {
                       child: Column(
                         children: [
                           Image.asset(
-                            "images/n22.png",
+                            "images/r22.png",
                           ),
                           Text(
-                            "N: Alphabets",
+                            "R: Alphabets",
                             style: TextStyle(fontSize: 20),
                           ),
                         ],
@@ -36,13 +36,13 @@ class _NImageVideoState extends State<NImageVideo> {
                     ),
                     GridView.count(
                       shrinkWrap: true,
-                      crossAxisCount: 2,
+                      crossAxisCount: 1,
                       mainAxisSpacing: 20,
                       crossAxisSpacing: 20,
                       children: [
                         Card(
                           child: Image.asset(
-                            "images/N111.JPG",
+                            "images/R111.jpg",
                           ),
                           elevation: 10,
                         ),
@@ -62,7 +62,7 @@ class _NImageVideoState extends State<NImageVideo> {
                       child: YoutubePlayer(
                         controller: YoutubePlayerController(
                           initialVideoId:
-                              'Vj_13bdU4dU?start=45&end=46&autoplay=1',
+                              'Vj_13bdU4dU?start=53&end=55&autoplay=1',
                           flags: YoutubePlayerFlags(
                             autoPlay: true,
                             mute: false,

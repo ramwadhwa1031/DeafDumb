@@ -1,7 +1,5 @@
 import 'package:flutter/material.dart';
-
-import 'circle.dart';
-import 'flower.dart';
+import 'package:myprojt/shape/circle.dart';
 
 class Shapecls extends StatefulWidget {
   @override
@@ -32,7 +30,6 @@ class _ShapeclsState extends State<Shapecls> {
               child: SingleChildScrollView(
                 child: Column(
                   children: [
-                  
                     InkWell(
                       child: Card(
                         child: ListTile(

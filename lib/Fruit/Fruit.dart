@@ -1,6 +1,11 @@
 import 'package:flutter/material.dart';
+import 'package:myprojt/Alphabets/Mango.dart';
+import 'package:myprojt/Fruit/Grapes.dart';
 
-import 'Apple.dart';
+import 'package:myprojt/Fruit/cherry.dart';
+
+import '../Apple.dart';
+import 'Watermillion.dart';
 import 'banana.dart';
 import 'orange.dart';
 
@@ -70,6 +75,54 @@ class _FruitSignState extends State<FruitSign> {
                         child: ListTile(
                           leading: Icon(Icons.forward),
                           title: Text(
+                            'Cherry',
+                          ),
+                        ),
+                      ),
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => CherryFruit()));
+                      },
+                    ),
+                    InkWell(
+                      child: Card(
+                        child: ListTile(
+                          leading: Icon(Icons.forward),
+                          title: Text(
+                            'Grape',
+                          ),
+                        ),
+                      ),
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => GrapeFruit()));
+                      },
+                    ),
+                    InkWell(
+                      child: Card(
+                        child: ListTile(
+                          leading: Icon(Icons.forward),
+                          title: Text(
+                            'Mango',
+                          ),
+                        ),
+                      ),
+                      onTap: () {
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => MangoFruit()));
+                      },
+                    ),
+                    InkWell(
+                      child: Card(
+                        child: ListTile(
+                          leading: Icon(Icons.forward),
+                          title: Text(
                             'Orange',
                           ),
                         ),
@@ -86,15 +139,15 @@ class _FruitSignState extends State<FruitSign> {
                         child: ListTile(
                           leading: Icon(Icons.forward),
                           title: Text(
-                            'D',
+                            'Watermillion',
                           ),
                         ),
                       ),
                       onTap: () {
-                        // Navigator.push(
-                        //     context,
-                        //     MaterialPageRoute(
-                        //         builder: (context) => DImageVideo()));
+                        Navigator.push(
+                            context,
+                            MaterialPageRoute(
+                                builder: (context) => WatermillionFruit()));
                       },
                     ),
                   ],

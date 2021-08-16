@@ -36,7 +36,7 @@ class _KImageVideoState extends State<KImageVideo> {
                     ),
                     GridView.count(
                       shrinkWrap: true,
-                      crossAxisCount: 2,
+                      crossAxisCount: 1,
                       mainAxisSpacing: 20,
                       crossAxisSpacing: 20,
                       children: [
@@ -46,15 +46,7 @@ class _KImageVideoState extends State<KImageVideo> {
                           ),
                           elevation: 10,
                         ),
-                        Card(
-                          color: Colors.blue,
-                          child: Image.asset(
-                            "images/A2.png",
-                            height: 110,
-                            fit: BoxFit.fill,
-                          ),
-                          //elevation: 10,
-                        ),
+
                         // Card(
                         //   child: Image.asset(
                         //     "images/A2.png",

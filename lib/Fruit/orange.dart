@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class SImageVideo extends StatefulWidget {
+class OrangeFruit extends StatefulWidget {
   @override
-  _SImageVideoState createState() => _SImageVideoState();
+  _OrangeFruitState createState() => _OrangeFruitState();
 }
 
-class _SImageVideoState extends State<SImageVideo> {
+class _OrangeFruitState extends State<OrangeFruit> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -22,16 +22,9 @@ class _SImageVideoState extends State<SImageVideo> {
                   children: [
                     Padding(
                       padding: const EdgeInsets.all(20.0),
-                      child: Column(
-                        children: [
-                          Image.asset(
-                            "images/s22.png",
-                          ),
-                          Text(
-                            "S: Alphabets",
-                            style: TextStyle(fontSize: 20),
-                          ),
-                        ],
+                      child: Text(
+                        "A : Orange Fruit",
+                        style: TextStyle(fontSize: 20),
                       ),
                     ),
                     GridView.count(
@@ -42,35 +35,23 @@ class _SImageVideoState extends State<SImageVideo> {
                       children: [
                         Card(
                           child: Image.asset(
-                            "images/S111.jpg",
+                            "images/fruit/orange.png",
                           ),
                           elevation: 10,
                         ),
                         Card(
-                          color: Colors.blue,
                           child: Image.asset(
-                            "images/A2.png",
-                            height: 110,
-                            fit: BoxFit.fill,
+                            "images/fruit/orange1.png",
                           ),
-                          //elevation: 10,
+                          elevation: 10,
                         ),
-                        // Card(
-                        //   child: Image.asset(
-                        //     "images/A2.png",
-                        //     width: 250,
-                        //     height: 250,
-                        //   ),
-                        //   elevation: 10,
-                        // ),
                       ],
                     ),
                     Padding(
                       padding: const EdgeInsets.only(top: 20),
                       child: YoutubePlayer(
                         controller: YoutubePlayerController(
-                          initialVideoId:
-                              'Vj_13bdU4dU?start=56&end=58&autoplay=1',
+                          initialVideoId: 'Vj_13bdU4dU',
                           flags: YoutubePlayerFlags(
                             autoPlay: true,
                             mute: false,

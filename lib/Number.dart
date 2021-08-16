@@ -1,12 +1,12 @@
 import 'package:flutter/material.dart';
 import 'package:youtube_player_flutter/youtube_player_flutter.dart';
 
-class CImageVideo extends StatefulWidget {
+class Numbercls extends StatefulWidget {
   @override
-  _CImageVideoState createState() => _CImageVideoState();
+  _NumberclsState createState() => _NumberclsState();
 }
 
-class _CImageVideoState extends State<CImageVideo> {
+class _NumberclsState extends State<Numbercls> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,7 +28,7 @@ class _CImageVideoState extends State<CImageVideo> {
                             "images/c22.png",
                           ),
                           Text(
-                            "C : Alphabets",
+                            "N : Number",
                             style: TextStyle(fontSize: 20),
                           ),
                         ],
@@ -36,33 +36,72 @@ class _CImageVideoState extends State<CImageVideo> {
                     ),
                     GridView.count(
                       shrinkWrap: true,
-                      crossAxisCount: 1,
+                      crossAxisCount: 2,
                       mainAxisSpacing: 20,
                       crossAxisSpacing: 20,
                       children: [
                         Card(
                           child: Image.asset(
-                            "images/C111.jpg",
+                            "images/0.png",
                           ),
                           elevation: 10,
                         ),
                         Card(
-                          color: Colors.blue,
                           child: Image.asset(
-                            "images/A2.png",
-                            height: 110,
-                            fit: BoxFit.fill,
+                            "images/one.png",
+                            width: 250,
+                            height: 250,
                           ),
-                          //elevation: 10,
+                          elevation: 10,
                         ),
-                        // Card(
-                        //   child: Image.asset(
-                        //     "images/A2.png",
-                        //     width: 250,
-                        //     height: 250,
-                        //   ),
-                        //   elevation: 10,
-                        // ),
+                        Card(
+                          child: Image.asset(
+                            "images/2.png",
+                          ),
+                          elevation: 10,
+                        ),
+                        Card(
+                          child: Image.asset(
+                            "images/3.png",
+                          ),
+                          elevation: 10,
+                        ),
+                        Card(
+                          child: Image.asset(
+                            "images/4.png",
+                          ),
+                          elevation: 10,
+                        ),
+                        Card(
+                          child: Image.asset(
+                            "images/5.png",
+                          ),
+                          elevation: 10,
+                        ),
+                        Card(
+                          child: Image.asset(
+                            "images/6.png",
+                          ),
+                          elevation: 10,
+                        ),
+                        Card(
+                          child: Image.asset(
+                            "images/7.png",
+                          ),
+                          elevation: 10,
+                        ),
+                        Card(
+                          child: Image.asset(
+                            "images/8.png",
+                          ),
+                          elevation: 10,
+                        ),
+                        Card(
+                          child: Image.asset(
+                            "images/9.png",
+                          ),
+                          elevation: 10,
+                        ),
                       ],
                     ),
                     Padding(
